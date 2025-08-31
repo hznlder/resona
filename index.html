@@ -3,15 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resona - Premium Music Streaming</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Resona - Premium Music Streaming App</title>
   <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
 <header>
-  <h1>Resona</h1>
+  <div class="logo-container">
+    <img src="assets/nolog.png" alt="Resona Logo" class="logo">
+    <h1>Resona</h1>
+  </div>
   <nav>
     <a href="#features">Features</a>
     <a href="#download">Download</a>
@@ -19,54 +21,62 @@
 </header>
 
 <section class="hero">
-  <div class="hero-content">
-    <h2>Premium Music Streaming App</h2>
-    <p>Stream your favorite songs, manage playlists, enjoy offline music, and experience a Spotify-inspired premium interface. Resona v1 is here!</p>
-    <div class="download-buttons" id="download">
-      <button class="btn btn-mobile" onclick="window.location.href='downloads/Resona_v1.apk'">Download for Mobile</button>
-      <button class="btn btn-windows">Download for Windows (Coming Soon)</button>
+  <img src="assets/nolog.png" alt="Resona Logo" class="hero-logo">
+  <h1>Resona</h1>
+  <p>Your Personal Music Companion - Stream, Discover, and Enjoy</p>
+  <div class="download-buttons">
+    <a href="downloads/Resona_v1.apk" class="btn btn-primary">Download for Mobile</a>
+    <button class="btn btn-secondary" disabled>Windows (Coming Soon)</button>
+  </div>
+</section>
+
+<section id="features">
+  <h2>Core Music Features</h2>
+  <div class="features-grid">
+    <div class="feature">
+      <i class="fa-solid fa-music"></i>
+      <h3>YouTube Integration</h3>
+      <p>Stream millions of songs directly from YouTube</p>
+    </div>
+    <div class="feature">
+      <i class="fa-solid fa-compact-disc"></i>
+      <h3>Lyrics Support</h3>
+      <p>View synchronized lyrics while listening</p>
+    </div>
+    <div class="feature">
+      <i class="fa-solid fa-play-circle"></i>
+      <h3>Full Player Controls</h3>
+      <p>Play, pause, skip, seek, and volume control</p>
+    </div>
+    <div class="feature">
+      <i class="fa-solid fa-headphones"></i>
+      <h3>Background Playback</h3>
+      <p>Listen while using other apps or on lockscreen</p>
+    </div>
+    <div class="feature">
+      <i class="fa-solid fa-heart"></i>
+      <h3>Like Songs & Playlists</h3>
+      <p>Save favorites and create custom playlists</p>
+    </div>
+    <div class="feature">
+      <i class="fa-solid fa-database"></i>
+      <h3>Offline Database</h3>
+      <p>Persistent local storage with Isar DB</p>
     </div>
   </div>
 </section>
 
-<section class="features" id="features">
-  <h3>Key Features</h3>
-  <div class="features-container">
-    <div class="feature">
-      <i class="fas fa-play-circle"></i>
-      <h4>YouTube Streaming</h4>
-      <p>Stream songs directly from YouTube and enjoy seamless playback.</p>
-    </div>
-    <div class="feature">
-      <i class="fas fa-cloud-download-alt"></i>
-      <h4>Offline Library</h4>
-      <p>Save your favorite songs and playlists to listen offline anytime.</p>
-    </div>
-    <div class="feature">
-      <i class="fas fa-lock"></i>
-      <h4>Lockscreen Controls</h4>
-      <p>Control your music from lockscreen or notifications effortlessly.</p>
-    </div>
-    <div class="feature">
-      <i class="fas fa-microphone-alt"></i>
-      <h4>Lyrics Support</h4>
-      <p>Real-time lyrics display for every song with integrated lyrics service.</p>
-    </div>
-    <div class="feature">
-      <i class="fas fa-list"></i>
-      <h4>Custom Playlists</h4>
-      <p>Create and manage your personal playlists with ease.</p>
-    </div>
-    <div class="feature">
-      <i class="fas fa-mobile-alt"></i>
-      <h4>Premium UI</h4>
-      <p>Modern, clean, and intuitive interface for the best user experience.</p>
-    </div>
+<section id="download">
+  <h2>Download Resona v1</h2>
+  <div class="download-buttons">
+    <a href="downloads/Resona_v1.apk" class="btn btn-primary">Download for Mobile</a>
+    <button class="btn btn-secondary" disabled>Windows (Coming Soon)</button>
   </div>
 </section>
 
 <footer>
-  &copy; 2025 Resona Music Streaming App | Version 1.0 | Made with ❤️ by izal-hzndler
+  <p>Made with ❤️ by hzndler</p>
+  <p>Follow us on <a href="https://t.me/resonahzndler">Telegram</a></p>
 </footer>
 
 <script src="script.js"></script>
